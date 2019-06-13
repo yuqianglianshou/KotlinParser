@@ -44,6 +44,7 @@ class QuoteParser(var proxyIp:ProxyIpModel):BaseParser<QuoteModel> (){
             listener?.onSuccess(list)
 
         }catch (e:java.lang.Exception){
+            println(e.printStackTrace())
             listener?.onFailed(e.message ?: "")
         }
     }
