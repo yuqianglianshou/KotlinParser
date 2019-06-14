@@ -1,5 +1,9 @@
 import model.ProxyIpModel
 import model.QuoteModel
+import java.io.File
+import java.io.FileOutputStream
+import java.lang.StringBuilder
+import java.nio.charset.Charset
 import java.util.concurrent.LinkedBlockingQueue
 import java.util.concurrent.ThreadPoolExecutor
 import java.util.concurrent.TimeUnit
@@ -84,6 +88,8 @@ class MainParser {
                     //只输出内容
                     println(it.content)
                 }
+                //写入到txt
+                writeFile(list)
             }
 
             override fun onFailed(erMsg: String) {
@@ -102,6 +108,35 @@ class MainParser {
         }
         //执行
         threadExecutor.execute(quoteThread)
+    }
+    private val outputStream: FileOutputStream = FileOutputStream("quote.txt", true)
+
+    /**
+     * 输出到txt文本
+     */
+    fun writeFile(list:List<QuoteModel>?){
+        list ?:return
+        synchronized(this::class.java){
+            val file = File("quote.txt")
+            if(!file.exists()) file.createNewFile()
+            if(file.length()<=0){
+                outputStream.write("\n名人名言:\n\n".toByteArray(Charsets.UTF_8))
+                outputStream.flush()
+            }else{
+                outputStream.write("\n\n\n\n追加:\n\n".toByteArray(Charsets.UTF_8))
+                outputStream.flush()
+            }
+            val builder = StringBuilder()
+            for(quote in list){
+                builder.append(quote.content)
+                builder.append("\n\n")
+            }
+            outputStream.write(builder.toString().toByteArray(Charsets.UTF_8))
+            outputStream.flush()
+            outputStream.close()
+
+        }
+
     }
 
 }

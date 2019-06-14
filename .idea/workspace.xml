@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98e09216-262f-491e-a0c9-0ebebe89a06b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BaseParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BaseParser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/MainParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MainParser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/QuoteParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/QuoteParser.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -31,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/MainParser.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+            <state relative-caret-position="297">
+              <caret line="130" column="45" lean-forward="true" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
               <folding>
                 <element signature="e#0#185#0" expanded="true" />
               </folding>
@@ -80,17 +77,17 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/model/ProxyIpModel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ParseHtmlListener.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ProxyIpParser.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/MainParser.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/BaseParser.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/QuoteParser.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/MainParser.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="136" />
-    <option name="y" value="34" />
+    <option name="x" value="201" />
+    <option name="y" value="49" />
     <option name="width" value="1400" />
-    <option name="height" value="912" />
+    <option name="height" value="913" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -195,14 +192,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="136" y="34" width="1400" height="912" extended-state="0" />
+    <frame x="201" y="49" width="1400" height="913" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20029455" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20029455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.3292683" />
@@ -210,7 +208,7 @@
       <window_info anchor="bottom" id="Build" weight="0.3292683" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5378049" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.272838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -277,8 +275,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/MainParser.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+        <state relative-caret-position="297">
+          <caret line="130" column="45" lean-forward="true" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
           <folding>
             <element signature="e#0#185#0" expanded="true" />
           </folding>
