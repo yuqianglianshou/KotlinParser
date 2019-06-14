@@ -12,13 +12,17 @@ class QuoteParser(var proxyIp:ProxyIpModel):BaseParser<QuoteModel> (){
     //该网站是一个国外的网站，专门展示名人名言
     private val PROVINCE_URL = "http://quotes.toscrape.com/page/"
 
+    //数据集
+    private val list = mutableListOf<QuoteModel>()
+    //当前将要爬的网页页码
+    private var currentPage:Int = 1;
+
     override fun run() {
         try {
             println("代理ip:${proxyIp.ipAddress},端口:${proxyIp.port}")
 
-            val list = mutableListOf<QuoteModel>()
             //获取旗云前5页的名人名言
-            for (page in 1 until 6) {
+            for (page in currentPage until 6) {
                 println("------- 开始获取：第 $page 页 -------")
                 println("地址为："+getProxyPageUrl(page))
                 val document = Jsoup.connect(getProxyPageUrl(page))
@@ -39,6 +43,7 @@ class QuoteParser(var proxyIp:ProxyIpModel):BaseParser<QuoteModel> (){
                 }
                 //模仿人工点击翻页延迟，防止IP地址被封
                 Thread.sleep(DELAY_TIME)
+                currentPage++
             }
 
             listener?.onSuccess(list)

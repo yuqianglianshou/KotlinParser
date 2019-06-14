@@ -78,6 +78,7 @@ class MainParser {
             override fun onSuccess(list: MutableList<QuoteModel>) {
                 //输出json
 //                println(list)
+                println("爬取的名人名言数量："+list.size)
                 println("爬取的名人名言：")
                 list.forEach{
                     //只输出内容
